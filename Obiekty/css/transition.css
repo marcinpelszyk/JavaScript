@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    background-color: #333;
+    color: white;
+    
+}
+
+h1 
+{
+    text-transform: uppercase;
+}
+
+.square
+{
+    position: relative;
+    left: 50%;
+
+    /* position: absolute; */
+    /* left: calc(50% - 50px); */
+    height: 130px;
+    width: 140px;
+    background-color: rgb(0, 132, 255);
+    border: 5px solid rgb(0, 77, 128);
+    border-radius: 8px;
+    transform: translate(-50%);
+    border: none;
+    box-shadow: 3px 3px 10px rgb(0, 132, 255);
+    
+    /* transition: all 1s ease 1s; */
+
+    /* transition-property: all;
+    transition-duration: 0s;
+    transition-timing-function: ease;
+    transition-delay: 0s; */
+}
+
+.square:hover
+{
+    background-color: rgb(253, 0, 255);
+    box-shadow: 3px 3px 10px rgb(253, 0, 255);
+}
+
+
+.translate
+{
+    background-color: rgb(0, 130, 255);
+
+    transition: .5s;
+    z-index: 1;
+}
+
+
+.translate:hover {
+    /* left: 30px;
+    transition: translate(-30px, 100px); */
+    
+}
+
+
+
+.scale
+{
+    background-color: rgb(0, 130, 255);
+    top: 50px;
+    transition: .5s;
+}
+
+.scale:hover
+{
+    transform: scale(.5);
+}
+
+
+.rotate
+{
+    border-left: 10px solid lime;
+    border-right: 10px solid yellow;
+    border-top: 10px solid #333;
+    border-bottom: 10px solid red;
+    background-color:  rgb(0, 130, 255);
+    top: 100px;
+    transition: .5s;
+}
+
+.rotate:hover
+{
+    
+    transform: rotateZ(60deg);
+}
+
+
+.skew
+{
+    background-color: rgb(0, 130, 255);
+    top: 150px;
+    width: 600px;
+    transition: 1s;
+}
+
+.skew:hover
+{
+    
+    transform: skew(40deg);
+}

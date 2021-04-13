@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: white;
+    z-index: 300;
+}
+
+
+
+
+
+.square {
+    display: inline-block;
+    position: absolute;
+    top: 80px;
+    padding: 10px 20px;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 9px;
+    z-index: 3;
+    transform: translate(-50%);
+    cursor: pointer;
+    transition: 1s;
+}
+
+button {
+    position: absolute;
+    top: 30px;
+    font-size: 8px;
+    color: white;
+    width: 80px;
+    height: 25px;
+    transform: translate(-50%);
+    border: 1px solid white;
+    border-radius: 2px;
+    background: none;
+    background-color: #333;
+    transition: box-shadow 1s;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    transition: color 1s, background-color .8s;
+}
+
+button:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.btn-zoom {
+    left: calc(30% - 40px);
+}
+
+.btn-movie {
+    left: calc(50% - 40px);
+}
+
+.btn-color {
+    left: calc(70% - 40px);
+}
+
+.btn-zoom:hover~.square {
+    display: block;
+    width: 150px;
+    height: 150px;
+} 
+
+.btn-movie:hover~.square {
+    top: 400px;
+
+}
+
+.btn-color:hover~.square {
+    background-color: #000;
+    border: 1px solid white;
+    box-shadow: 3px 3px 5px black;
+} 
+
+
+
+.red {
+    left: calc(30% - 40px);
+    background-color: red;
+    box-shadow: 4px 4px 10px red;
+}
+
+
+.blue {
+    left: calc(50% - 40px);
+    background-color: royalblue;
+    box-shadow: 4px 4px 10px  royalblue;
+}
+
+
+.green {
+    left: calc(70% - 40px);
+    background-color: green;
+    box-shadow: 4px 4px 10px green;
+}
+
+
+
+
+
+
+
+
+
+/* .main {
+    position: relative;
+    margin: 200px auto;
+    height: 300px;
+    width: 600px;
+
+    background-color: royalblue;
+}
+
+
+.inside {
+    
+    top: 0;
+  height: 120px;
+    width: 120px;
+
+    background-color: green;
+    border: 2px solid black;
+}
+
+
+.last {
+    
+    top: 30px
+    left: 20px;
+    height: 80px;
+    width: 80px;
+
+
+    background-color: tomato;
+
+} */

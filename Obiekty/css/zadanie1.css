@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body
+{
+    background-color: #333;
+    color: #000;
+}
+
+div {
+    border: 1px solid #000;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.pas-abs {
+    position: absolute;
+    cursor: pointer;
+    line-height: 35px;
+}
+
+.long {
+    top: 50px;
+    left: calc(50% - 400px);
+    width: 800px;
+    height: 35px;
+    background-color: tomato;
+    transition: background-color .8s, width .8s, transform .2s;
+}
+
+.long:hover {
+    left: calc(50% - 150px);
+    width: 300px;
+    background-color: gold;
+    transform: scale(2);
+}
+
+.short-size {
+    width: 300px;
+    height: 35px;
+}
+
+.short {
+    left: calc(50% - 150px);
+    border-radius: 20px;
+    top: 100px;
+    background-color: royalblue;
+    transition: transform 1s ease-out;
+}
+
+
+.short-pos-rad {
+    border-radius: 10px;
+    top: 150px;
+}
+.short2 {
+    left: calc(30% - 150px);
+    background-color: gold;
+    transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s;
+}
+
+.short3 {
+    left: calc(70% - 150px);
+    background-color: greenyellow;
+    transition: transform 1s ease-out 1s;
+}
+
+.short:hover~.short3, .short:hover~.short2, .short:hover  {
+    transform: rotate(360deg);
+}
+
+.center {
+    top: 50%;
+    left: 35%;
+    transform: translate(-50px, -50px);
+    width: 500px;
+    height: 250px;
+    background: none;
+    color: #fff;
+    transition: background-color .8s;
+}
+
+.center:hover {
+    background-color: #fff;
+}
